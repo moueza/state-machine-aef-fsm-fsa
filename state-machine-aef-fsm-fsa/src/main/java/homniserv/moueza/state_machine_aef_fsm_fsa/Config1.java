@@ -1,13 +1,17 @@
 package homniserv.moueza.state_machine_aef_fsm_fsa;
 
+import java.util.EnumSet;
+
 import org.springframework.context.annotation.Configuration;
 import org.springframework.statemachine.config.EnableStateMachine;
 import org.springframework.statemachine.config.EnumStateMachineConfigurerAdapter;
+import org.springframework.statemachine.config.builders.StateMachineStateConfigurer;
+import org.springframework.statemachine.config.builders.StateMachineTransitionConfigurer;
 
 /** https://projects.spring.io/spring-statemachine/ */
 @Configuration
 @EnableStateMachine
-static class Config1 extends EnumStateMachineConfigurerAdapter<States, Events> {
+public class Config1 extends EnumStateMachineConfigurerAdapter<States, Events> {
 
 	@Override
 	public void configure(StateMachineStateConfigurer<States, Events> states) throws Exception {
