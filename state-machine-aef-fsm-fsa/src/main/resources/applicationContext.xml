@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+		http://www.springframework.org/schema/context
+	   		http://www.springframework.org/schema/context/spring-context-3.2.xsd
+    http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+
+	<context:annotation-config />
+	<!-- http://forum.spring.io/forum/spring-projects/data/128653-repository-null-pointer-exception -->
+	<context:component-scan base-package="services" />
+	<bean id="acServImpl" class="services.AccountServiceImpl"
+		scope="singleton" />
+	<!-- <bean id="compteServiceImpl" class="services.CompteServiceImpl" -->
+	<!-- scope="singleton" /> -->
+	<!-- <bean id="userEntity" class="entity.Compte" scope="singleton" /> -->
+
+
+	<!-- <bean id="compteBean" class="entity.Compte" scope="singleton" /> -->
+
+	<!-- <bean id="compteDAOimpl" class="dao.CompteDAOhibImpl" -->
+	<!-- scope="singleton" /> -->
+	<!-- <bean id="aspects" class="services.Aspect" scope="singleton" /> -->
+
+
+	<!-- <bean id="indexActionnAppContext" class="presentation.IndexAction" -->
+	<!-- scope="prototype" /> -->
+	<!-- <bean id="userActionCase1" class="presentation.UserActionCase1" -->
+	<!-- scope="prototype" /> -->
+
+	<!-- <bean id="comptesBEANaction" -->
+	<!-- class="presentation.ComptesActionCase1" scope="prototype" /> -->
+
+	<!-- <bean id="compte" class="entity.Compte" scope="prototype" /> -->
+
+
+
+
+	<!-- https://docs.spring.io/spring/docs/3.0.0.M4/reference/html/ch03s10.html -->
+	<!-- context:component-scan base-package="services,presentation" -->
+
+	<!-- https://docs.spring.io/spring/docs/2.5.x/reference/aop.html -->
+	<!-- no buggy annotation <aop:aspectj-autoproxy /> -->
+
+	<!-- https://docs.spring.io/spring-data/data-commons/docs/1.6.1.RELEASE/reference/html/repositories.html -->
+	<jpa:repositories base-package="com.acme.repositories" />
+</beans>	
