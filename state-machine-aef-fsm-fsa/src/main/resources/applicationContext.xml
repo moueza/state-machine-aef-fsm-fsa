@@ -42,12 +42,12 @@
 
 
 
-	<!-- https://docs.spring.io/spring/docs/3.0.0.M4/reference/html/ch03s10.html -->
+	<!-- https://docs.spring.io/spring/docs/3.0.0.M4/referenceConfig2/html/ch03s10.html -->
 	<!-- context:component-scan base-package="services,presentation" -->
 
-	<!-- https://docs.spring.io/spring/docs/2.5.x/reference/aop.html -->
+	<!-- https://docs.spring.io/spring/docs/2.5.x/referenceConfig2/aop.html -->
 	<!-- no buggy annotation <aop:aspectj-autoproxy /> -->
 
-	<!-- https://docs.spring.io/spring-data/data-commons/docs/1.6.1.RELEASE/reference/html/repositories.html -->
+	<!-- https://docs.spring.io/spring-data/data-commons/docs/1.6.1.RELEASE/referenceConfig2/html/repositories.html -->
 	<jpa:repositories base-package="com.acme.repositories" />
 </beans>	

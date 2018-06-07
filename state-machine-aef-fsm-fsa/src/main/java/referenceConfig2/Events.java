@@ -1,4 +1,4 @@
-package homniserv.moueza.state_machine_aef_fsm_fsa;
+package referenceConfig2;
 /**
  *https://projects.spring.io/spring-statemachine/
  * https://docs.spring.io/autorepo/docs/spring-statemachine/1.2.x-SNAPSHOT/referenceConfig2/html/developing-your-first-spring-statemachine-application.html
